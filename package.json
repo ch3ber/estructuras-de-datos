@@ -1,0 +1,35 @@
+{
+  "name": "estructuras-de-datos",
+  "version": "1.0.0",
+  "description": "Conjunto de estructuras de datos escritas en JavaScript y Typescript",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ch3ber/estructuras-de-datos.git"
+  },
+  "keywords": [
+    "data-structures",
+    "javascript",
+    "typescript",
+    "data-managment",
+    "data-structure"
+  ],
+  "author": "Eber Edrey Alejo Berrones <eber4202@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ch3ber/estructuras-de-datos/issues"
+  },
+  "homepage": "https://github.com/ch3ber/estructuras-de-datos#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.47.0",
+    "@typescript-eslint/parser": "5.47.0",
+    "eslint": "8.30.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.6.0",
+    "eslint-plugin-promise": "6.1.1"
+  }
+}
