@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Conjunto de estructuras de datos escritas en JavaScript y Typescript",
   "main": "README.md",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
