@@ -9,7 +9,11 @@ export class DynamicArray {
     this.length = 0
   }
 
-  m () {
+  items () {
+    return Object.values(this.#memory)
+  }
+
+  debug () {
     return { length: this.length, memory: this.#memory }
   }
 
@@ -90,6 +94,14 @@ export class DynamicArray {
     this.length--
     return item
   }
+
+  map (func) {
+    const array = new DynamicArray()
+    for (let i = 0; i < this.length - 1; i++) {
+      array.push(func(this.#memory[i], i, Object.values(this.#memory)))
+    }
+    return array.items()
+  }
 }
 
 // --- tests ---
@@ -105,12 +117,15 @@ array.push('eee')
 array.shift('aza')
 array.shift('bzb')
 array.shift('czb')
-console.log(array.m())
+console.log(array.debug())
 // delete data from the array
 console.log(array.pop())
 console.log(array.unshift())
 console.log(array.delete(2))
-console.log(array.m())
+console.log(array.debug())
 // get
 console.log(array.get(0))
 console.log(array.get(1, 4))
+// map
+console.log(array.map(item => item.toUpperCase()))
+console.log(array.debug())
